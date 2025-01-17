@@ -41,7 +41,12 @@ public class Stack{
         
     }
 
-    public void peek(){System.out.println(StudentStack.get(top));}
+    public void peek(){
+        if(isEmpty()){
+            System.out.println("Stack is empty");
+        }
+        System.out.println(StudentStack.get(top));
+    }
 
     public boolean isEmpty(){
         return top == -1;
